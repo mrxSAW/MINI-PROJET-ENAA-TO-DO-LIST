@@ -47,8 +47,8 @@ function supprimerTache () {
     let tachid = prompt ("entrer id de la  tache a supprimer : ");
        for (let i=0 ; i<tab.length ; i++){
           if (tab[i].id == tachid){
-               delete tab[i] ;
-            
+               //delete tab[i] ;
+                tab.splice(tachid-1,1);
           }   } 
         
 
